@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/0593828612.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Private stylesheet -->
+    <link rel="stylesheet" href="../styles/home.css" />
+    <script src="../scripts/contactForm.js"></script>
+    <script>
+        required.add('Full_Name', 'NOT_EMPTY', 'Full Name');
+        required.add('Email_Address', 'EMAIL', 'Email Address');
+        required.add('Your_Message', 'NOT_EMPTY', 'Your Message');
+        required.add('AntiSpam', 'NOT_EMPTY', 'Anti-Spam Question');
+    </script>
+    <link rel="stylesheet" type="text/css" href="../styles/contanctFormStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- #f1f5f8 BLUE COLOR -->
+        <div id="information">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="p-2">
+                        <i class="fas fa-phone"></i> 0893909594
+                        <i class="far fa-envelope"></i> info@remontirapokrivi.com
+                    </div>
+                    <div class="p-2 ml-auto p-2">
+                        <a href="https://www.facebook.com/Remontirapokrivi-100565438949251/">
+                            <i class="fab fa-facebook-f">
+                        </i>
+                        </a>
+                    </div>
+                </div>
+
+                <span></span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div id="navBarBrand">
+                    <a class="navbar-brand" href="#">RemontiraPokrivi.com</a>
+                    <p>Професионален ремонт на покриви</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-expand-sm" id="navbarSupportedContent2">
+                    <ul class="navbar-nav mainlyNavBar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Начало </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">За нас </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Услуги</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./prices.html">Цени</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./contactUs.html">Контакти <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid backgroundImageConctact">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#F8F9FA" fill-opacity="1" d="M0,128L60,106.7C120,85,240,43,360,58.7C480,75,600,149,720,186.7C840,224,960,224,1080,208C1200,192,1320,160,1380,144L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+              </svg> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L30,234.7C60,245,120,267,180,261.3C240,256,300,224,360,224C420,224,480,256,540,240C600,224,660,160,720,149.3C780,139,840,181,900,165.3C960,149,1020,75,1080,42.7C1140,11,1200,21,1260,42.7C1320,64,1380,96,1410,112L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path  fill="#F8F9FA" fill-opacity="1" d="M0,320L30,288C60,256,120,192,180,170.7C240,149,300,171,360,181.3C420,192,480,192,540,160C600,128,660,64,720,58.7C780,53,840,107,900,117.3C960,128,1020,96,1080,74.7C1140,53,1200,43,1260,85.3C1320,128,1380,224,1410,272L1440,320L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+                <path  fill="#F8F9FA" fill-opacity="1" d="M0,224L12,186.7C24,149,48,75,72,85.3C96,96,120,192,144,208C168,224,192,160,216,122.7C240,85,264,75,288,69.3C312,64,336,64,360,85.3C384,107,408,149,432,186.7C456,224,480,256,504,261.3C528,267,552,245,576,224C600,203,624,181,648,176C672,171,696,181,720,192C744,203,768,213,792,218.7C816,224,840,224,864,197.3C888,171,912,117,936,128C960,139,984,213,1008,250.7C1032,288,1056,288,1080,293.3C1104,299,1128,309,1152,309.3C1176,309,1200,299,1224,266.7C1248,235,1272,181,1296,181.3C1320,181,1344,235,1368,224C1392,213,1416,139,1428,101.3L1440,64L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path>
+              </svg>
+            <div class="container test">
+
+                <div class="row contactUsContainer">
+                    <div class="col-md-6">
+                        <div class="text">
+                            <h1>За въпроси или контакти</h1>
+                            <ul>
+                                <li> Напишете Вашето запитване в секцията отдясно и възможно най-скоро ще се свържем с Вас по телефона или по имейла.</li>
+                                <li>За директна връзка с нас, можете да звъннете или да пишете на:</li>
+                                <li>Номер: 0893909594</li>
+                                <li>Имейл: info@remontirapokrivi.com</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form name="theContactForm" method="post" action="../scripts/contactForm.php" onsubmit="return validate.check(this)">
+                            <div class="card border-default rounded-0">
+                                <div class="card-header p-0">
+                                    <div class="bg-warning text-white text-center py-2">
+                                        <h3>
+                                            <!-- <i class="fa fa-envelope"></i> -->
+                                            <span class="text">Запитване</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="fas fa-user text-warning "></i>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="Full_Name" id="Full_Name" maxlength="80" placeholder="Вашето име" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="fas fa-envelope text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="Email_Address" id="Email_Address" maxlength="100" placeholder="Вашият имейл адрес" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <i class="fas fa-phone text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="Telephone_Number" id="Telephone_Number" maxlength="100" placeholder="Телефоният Ви номер" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <td valign="top">
+                                            <i class="fa fa-comment text-warning"></i>
+                                            <textarea name="Your_Message" id="Your_Message" maxlength="2000" placeholder="Вашето съобщение"></textarea>
+                                        </td>
+                                    </div> -->
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fas fa-comment text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <textarea class="form-control" name="o_c_message" id="o_c_message" cols="30" rows="3"></textarea>
+                                    </div>
+                                    <div class="antispammessage">
+                                        За да предодвратим спама, моля отговорете на въпроса
+                                        <div class="antispamquestion">
+                                            <span class="required_star"> * </span> 10 + 15 = ? &nbsp;
+                                            <input type="text" name="AntiSpam" id="AntiSpam" maxlength="100" style="width:30px">
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="submit" value="Submit Form" class="btn btn-warning btn-block rounded py-2 customButton" id="submitButton">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="container-fluid beforeLast mx-auto">
+            <hr class="first-line-footer">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse navbar-expand-sm" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Начало </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./aboutus.html">За нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./services.html">Услуги</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./prices.html">Цени</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./contactUs.html">Контакти <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <hr class="second-line-footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-6 justify-content-start lastItemHeader">
+                        <h4>RemontiraPokrivi.com</h4>
+                        <p>Това е сайта на една сериозна бригада за ремонт на покриви</p>
+                        <div class="row">
+                            <div class="col-sm-12">Изработка на сайта от: Емил Златинов</div>
+                            <div class="col-sm-12">
+                                <a href="https://remontirapokrivi.com/wp-admin">
+                                    Вход в сайта</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-end flex-column secondLastItem">
+                        <div class="forUsFooter">За нас:</div>
+                        <ul class="list-group">
+                            <li class="p-2">Работим в цяла България!</li>
+                            <li class="p-2">Телефон: 0893909594</li>
+                            <li class="p-2">Email: info@remontirapokrivi.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid lastFooter">
+            <div>
+                <div class="container">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./scripts/styleScript.js"></script>
+
+</html>
