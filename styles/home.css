@@ -1,0 +1,631 @@
+/*------- Fonts---------- */
+
+
+/* FONTS
+For Slide bar - Ruda, Helvetica, Arial, sans-serif; 
+*/
+
+
+/* @font-face {
+    font-family: ruda;
+    src: url(fonts/RudaRegular.ttf);
+} */
+
+
+/*------- Global styles -------*/
+
+html {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    /* background-color: #d6d6d6; */
+    background-color: #f1f5f8;
+    min-height: 33vh;
+}
+
+.dropdown-item {
+    color: #4984B8;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.first-line-footer {
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    border-top: black 1px solid
+}
+
+.second-line-footer {
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    border-top: black 1px solid
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#blueBg {
+    background-color: #f1f5f8;
+    text-align: center;
+    padding: 5vh;
+}
+
+.tales {
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 87vh !important;
+    height: 100;
+}
+
+.carousel-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.carousel .carousel-item {
+    height: 89vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 89vh;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+
+.carousel-text h1 {
+    font-size: 4em;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3vw;
+    height: 3vw;
+}
+
+
+/* FontAwesome */
+
+.fab {
+    color: white
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook-f {
+    display: inline-block;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.7em;
+    background-color: #0778e9;
+}
+
+.fa {
+    color: white;
+    font-size: 2vw;
+    display: inline;
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.4em 0.4em;
+    background-color: #0778e9;
+}
+
+.emojisBox {
+    margin: 0;
+    padding: 0;
+}
+
+.emojisTest {
+    margin-left: -1vw;
+}
+
+.emojisTest::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 0.8vw solid transparent;
+    border-right: 0.8vw solid transparent;
+    border-top: 1.7vw solid #0778e9;
+    position: relative;
+    left: 25%;
+}
+
+.emojisInformation {
+    inline-size: 25vw;
+    overflow: hidden;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+
+/*---------- Header on navbar----- */
+
+#information {
+    background-color: #f1f5f8;
+}
+
+
+/*----- Images next to eachother------ */
+
+
+/* Container */
+
+.textImagesContainer {
+    margin-bottom: 4vw;
+}
+
+
+/* imagesObjects */
+
+.textImages {
+    font-size: 3vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Helvetica, Arial, sans-serif;
+}
+
+
+/* Images */
+
+.row-no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/* Emojis */
+
+.textEmojis {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.textEmojis>p::first-letter {
+    text-transform: uppercase;
+}
+
+.textEmojis p {
+    margin-right: -2.7vw;
+    margin-top: -1vw;
+    inline-size: 20vw;
+    overflow: hidden;
+}
+
+
+/* Make first letter bigger */
+
+.emojisCol {
+    margin-bottom: 2vw;
+    margin-left: -4vw;
+}
+
+
+/* container */
+
+.emojisContainer {
+    margin-top: 7vw;
+    margin-left: 10vw;
+    margin-bottom: 7vw;
+}
+
+
+/* -------- GoodCraftSman company ------ */
+
+
+/* Image */
+
+.goodCraftstman {
+    background-image: url("https://remontirapokrivi.com/wp-content/uploads/2019/05/remontnapokrivi-2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: ruda, sans-serif, Helvetica, Arial, sans-serif;
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.textGoodCraftsMan {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+    inline-size: 50vw;
+    z-index: 4;
+    font-weight: 900;
+}
+
+.goodCraftstman::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(182, 66, 66);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+.companyNames .col-sm-4 {
+    margin-top: 5vw;
+}
+
+.companyNames {
+    padding-top: 10%;
+}
+
+
+/* Before last */
+
+
+/* LAST */
+
+.lastFooter {
+    background-color: #28313d;
+    text-align: center;
+}
+
+.lastItemHeader {
+    position: relative;
+    top: 6em;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.forUsFooter {
+    position: relative;
+    left: -8em;
+    font-size: 1.3em;
+}
+
+.forUsFooter::before {
+    content: '';
+    width: 0.2em;
+    height: 1.2em;
+    display: inline-block;
+    background-color: rgb(23, 72, 115);
+    margin-right: 10px;
+}
+
+.secondLastItem {
+    margin-top: 13px;
+}
+
+
+/* Media queries */
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    /* Global */
+    body {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    .mainlyNavBar li a {
+        inline-size: 12vw;
+        margin: 0;
+        padding: 0;
+    }
+    .mainlyDropDownMenu {
+        inline-size: 40vw;
+    }
+    .nav-link {
+        font-weight: 720;
+        inline-size: 13vw;
+    }
+    .center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel-indicators {
+        margin-right: 14vw;
+    }
+    .carousel-text h1 {
+        font-size: 2em;
+    }
+    .fa {
+        color: white;
+        font-size: 2.7vw;
+        display: inline;
+        border-radius: 10%;
+        box-shadow: 0px 0px 2px #888;
+        padding: 0.4em 0.4em;
+        background-color: #0778e9;
+    }
+    /* Bugged */
+    .buggedTextEmoji {
+        padding-left: 1em;
+    }
+    .textEmojis p {
+        font-size: 2.8vw;
+        inline-size: 100vw;
+        margin-right: -20em;
+        overflow: hidden;
+    }
+    .emojisInformation {
+        font-size: 1em;
+        inline-size: 80vw;
+        overflow: hidden;
+    }
+    .emojisCol {
+        margin-bottom: 7vw;
+    }
+    .emojisBox {
+        padding: 0;
+        margin: 0;
+    }
+    .emojisTest::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 1.2vw solid transparent;
+        border-right: 1.2vw solid transparent;
+        border-top: 2vw solid #0778e9;
+        position: relative;
+        left: 20%;
+    }
+    .goodCraftsmanContainer {
+        height: 100vh;
+    }
+    .textGoodCraftsMan {
+        font-size: 2.7em;
+        inline-size: 100vw;
+    }
+    .companyNames .col-sm-6 {
+        padding-top: 10vh;
+    }
+    .lastItemContainer {
+        height: 30vh;
+    }
+    .lastItemContainer .row {
+        position: relative;
+        top: 20px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: 100vh;
+    }
+    .mainlyDropDownMenu {
+        inline-size: 30vw;
+    }
+    .carousel-text h1 {
+        color: white;
+        font-family: 'Helvetica Neue', sans-serif;
+        inline-size: 70vw;
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        line-height: 1;
+    }
+    .textEmojis p {
+        font-size: 2vw;
+        inline-size: 30vw;
+        overflow: hidden;
+    }
+    .emojisInformation {
+        font-size: 1em;
+        inline-size: 40vw;
+        overflow: hidden;
+    }
+    .emojisCol {
+        margin-bottom: 5vw;
+    }
+    .goodCraftsmanContainer {
+        height: 100vh;
+    }
+    .textGoodCraftsMan {
+        font-size: 3.2em;
+        inline-size: 20PX;
+    }
+    .companyNames .col-sm-6 {
+        padding-top: 11vh;
+    }
+    .mladostImg {
+        height: 12em;
+        width: 40vw;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .mainlyDropDownMenu {
+        inline-size: 29vw;
+    }
+    .textEmojis p {
+        font-size: 1.6vw;
+        inline-size: 20vw;
+    }
+    .emojisInformation {
+        margin-top: 1vw;
+        font-size: 1em;
+        inline-size: 29vw;
+    }
+    .emojisCol {
+        margin-bottom: 5vw;
+    }
+    .goodCraftsmanContainer {
+        height: 100vh;
+    }
+    .textGoodCraftsMan {
+        font-size: 4em;
+        inline-size: 20PX;
+    }
+    .companyNames img {
+        height: 20vh;
+        width: 100%;
+    }
+    .mladostImg {
+        margin-top: 40%;
+        height: 20vh;
+        width: 13em;
+    }
+    /* .goodCraftsmanContainer {
+        height: 100vh;
+    }
+    .mladostImg {
+        margin-top: 40%;
+        height: 20vh;
+        width: 13em;
+    }
+    .companyNames img {
+        padding-top: 40px;
+    } */
+    .mainlyNavBar {
+        position: relative;
+        right: 0;
+    }
+    .mainlyNavBar li a {
+        inline-size: 7vw;
+    }
+    .lastItemContainer {
+        height: 31vh;
+    }
+    .lastItemContainer .row {
+        position: relative;
+        top: 25px;
+    }
+}
+
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .textEmojis p {
+        font-size: 1.6vw;
+    }
+    .emojisInformation {
+        font-size: 1.2em;
+    }
+    .emojisCol {
+        margin-bottom: 5vw;
+    }
+    .companyNames img {
+        padding-top: 3vw;
+        padding-left: 2vw;
+    }
+    .textGoodCraftsMan {
+        inline-size: 100vw;
+        font-size: 4.6em;
+    }
+    .goodCraftsmanContainer {
+        height: 100vh;
+    }
+    .companyNames img {
+        height: 25vh;
+        width: 100%;
+    }
+    .mladostImg {
+        margin-top: 100px;
+        height: 30vh;
+        width: 50vw;
+    }
+    .mainlyNavBar li a {
+        inline-size: 7vw
+    }
+}
+
+@media (min-width: 1400px) {
+    .mainlyNavBar li a {
+        padding: -400px;
+        inline-size: 6vw
+    }
+    .lastItemContainer {
+        height: 30vh;
+    }
+    .lastItemContainer .row {
+        position: relative;
+        top: 35px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .mainlyNavBar li a {
+        padding: -400px;
+        inline-size: 5vw
+    }
+}

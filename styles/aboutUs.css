@@ -1,0 +1,103 @@
+.containerAboutUs {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 350px;
+    border-bottom-right-radius: 15%;
+}
+
+.containerAboutUs h1 {
+    margin-top: -46vw;
+    z-index: 4;
+    text-align: center;
+}
+
+.test1 {
+    z-index: -1;
+}
+
+svg {
+    height: 100vh;
+}
+
+.test2 {
+    margin-top: -25vh;
+    margin-bottom: 7vh;
+}
+
+.boxAboutsUs {
+    margin-top: -104vh;
+    z-index: 0;
+    background-color: white;
+    /* box-shadow: 10px 10px #808080; */
+    /* box-shadow: 0 0 25px 10px rgba(191, 191, 191, .25); */
+    box-shadow: 0 5px 65px 0 rgba(0, 0, 0, .20);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.boxAboutsUs h3 {
+    color: #2a9df4;
+    /* color: #03254c; */
+}
+
+.boxAboutsUs p {
+    font-size: 1.2em;
+}
+
+.customButton {
+    font-size: 1.5em;
+}
+
+footer {
+    margin-top: -33vh;
+}
+
+@media (min-width: 576px) {
+    .boxAboutsUs {
+        /* margin-left: 20vh; */
+        /* margin-right: 20vh; */
+        font-size: 0.9em;
+        inline-size: 55vh;
+    }
+    .beforeLast {
+        margin-top: 30vh;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .boxAboutsUs {
+        /* margin-left: 20vh; */
+        /* margin-right: 20vh; */
+        font-size: 1.2em;
+        inline-size: 75vh;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .boxAboutsUs {
+        /* margin-left: 20vh; */
+        /* margin-right: 20vh; */
+        font-size: 1.2em;
+        inline-size: 86vh;
+    }
+}
+
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .boxAboutsUs {
+        /* margin-left: 20vh; */
+        /* margin-right: 20vh; */
+        font-size: 1.2em;
+        width: 100%;
+    }
+}

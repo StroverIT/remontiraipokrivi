@@ -1,0 +1,273 @@
+.servicesAboutContainer {
+    background-color: #F8F9FA;
+    margin-bottom: -2vh;
+    margin-top: 14vh;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.servicesAboutContainer h4 {
+    font-size: 1.4em;
+    inline-size: 20vw;
+}
+
+.servicesAboutContainer .container:nth-child(2) {
+    padding: 5vh 20vh 3vh;
+}
+
+.customButton {
+    margin-top: 3vh;
+    font-size: 3vh;
+    transform: rotate(10deg);
+}
+
+@media (min-width: 576px) {
+    .header {
+        margin-bottom: 10vh;
+    }
+    .lines-container {
+        margin-left: 35%;
+    }
+    /* Bugged one */
+    .firstTextServices {
+        margin-top: 1em;
+    }
+    .secondTextServices {
+        margin-top: 2em;
+    }
+    .lastTextServices {
+        margin-top: 2em;
+    }
+    /* Services boxes left */
+    .textServicesLeft h3 {
+        font-size: 1.5em;
+        inline-size: 30vh;
+    }
+    .blue-down-line {
+        width: 20vh;
+        margin-left: 5vh;
+        margin-top: -1vh
+    }
+    .textServicesLeft p {
+        font-size: 1.2em;
+        inline-size: 60vh;
+    }
+    /* Services boxes right */
+    .blue-down-line {
+        width: 20vh;
+        margin-left: 5vh;
+        margin-top: -1vh
+    }
+    .rightBlueLine {
+        margin-left: 10vw;
+    }
+    .serviceImageLeft {
+        position: relative;
+    }
+    .textServicesRight h3 {
+        inline-size: 45vw;
+        font-size: 1.5em;
+    }
+    .textServicesRight p {
+        margin-top: 1.4em;
+        margin-left: -40vw;
+        font-size: 1.2em;
+        inline-size: 60vh;
+    }
+    .servicesAboutContainer h4 {
+        inline-size: 50vw;
+        position: relative;
+        right: 20%;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .theServices {
+        margin-top: 15vh;
+    }
+    /* Services boxes left */
+    .textServicesLeft h3 {
+        font-size: 2em;
+        inline-size: 40vh;
+    }
+    .blue-down-line {
+        width: 20vh;
+        margin-left: 5vh;
+        margin-top: -1vh
+    }
+    .leftBlueLine {
+        position: relative;
+        left: 4vw;
+        height: 4px;
+    }
+    .textServicesLeft p {
+        font-size: 1.2em;
+        inline-size: 80vh;
+    }
+    .serviceImageRight {
+        position: relative;
+        right: 3.1vh;
+        top: -2.5em;
+    }
+    /* Services boxes right */
+    .blue-down-line {
+        width: 20vh;
+        margin-left: 5vh;
+        margin-top: -1vh
+    }
+    .rightBlueLine {
+        margin-left: 10vw;
+        height: 4px;
+    }
+    .serviceImageLeft {
+        position: relative;
+    }
+    .textServicesRight h3 {
+        inline-size: 45vw;
+        font-size: 1.5em;
+    }
+    .textServicesRight p {
+        margin-top: 2em;
+        margin-left: -40vw;
+        font-size: 1.2em;
+        inline-size: 70vh;
+    }
+    /* bugged */
+    .buggedTextHidro p {
+        padding-top: 3em;
+    }
+    .buggedTextTenekii h3 {
+        inline-size: 40vw;
+        font-size: 1.8em;
+    }
+    .servicesAboutContainer h4 {
+        inline-size: 50vw;
+        position: relative;
+        right: 10%;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .theServices {
+        margin-top: 4vh;
+    }
+    /* Services boxes left */
+    .textServicesLeft h3 {
+        font-size: 2em;
+        inline-size: 40vh;
+    }
+    .blue-down-line {
+        width: 20vh;
+        margin-left: 5vh;
+        margin-top: -1vh
+    }
+    .leftBlueLine {
+        position: relative;
+        left: 8vw;
+        height: 4px;
+    }
+    .textServicesLeft {
+        position: relative;
+        bottom: 2vh;
+    }
+    .textServicesLeft p {
+        font-size: 1.2em;
+        inline-size: 50vh;
+    }
+    .serviceImageRight {
+        position: relative;
+        right: 3.1vh;
+        top: 1em;
+    }
+    /* Services boxes right */
+    .blue-down-line {
+        width: 20vh;
+        margin-left: 5vh;
+        margin-top: -1vh
+    }
+    .rightBlueLine {
+        margin-left: 14vw;
+        height: 4px;
+    }
+    .serviceImageLeft {
+        position: relative;
+    }
+    .textServicesRight {
+        position: relative;
+        bottom: 5vh;
+    }
+    .textServicesRight h3 {
+        inline-size: 45vw;
+        font-size: 1.5em;
+    }
+    .textServicesRight p {
+        margin-top: -0.3em;
+        margin-left: 0vw;
+        font-size: 1.2em;
+        inline-size: 50vh;
+    }
+    /* bugged */
+    .buggedTextKeremidi h3 {
+        margin-top: 5%;
+        inline-size: 40vw;
+    }
+    .firstTextServices h3 {
+        margin-left: 1em;
+    }
+    .buggedTextHidro p {
+        padding-top: 3em;
+    }
+    .buggedTextTenekii h3 {
+        inline-size: 40vw;
+        font-size: 1.8em;
+    }
+    .servicesAboutContainer h4 {
+        left: 10%;
+    }
+}
+
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .theServices {
+        margin-top: 15vh;
+    }
+    .lines-container {
+        position: relative;
+        left: 10%;
+    }
+    /* Services boxes left */
+    .textServicesLeft h3 {
+        position: relative;
+        right: 5%;
+        font-size: 2.5em;
+        inline-size: 50vh;
+    }
+    .leftBlueLine {
+        position: relative;
+        left: 15%;
+    }
+    /* Services boxes right */
+    .textServicesRight h3 {
+        position: relative;
+        right: 30%;
+        font-size: 2em;
+    }
+    .rightBlueLine {
+        position: relative;
+        right: 20%;
+    }
+    .servicesAboutContainer h4 {
+        position: relative;
+        left: -10%;
+    }
+}
