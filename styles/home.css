@@ -388,7 +388,7 @@ ul li {
     /* Carousel */
     .carousel-inner {
         width: 100%;
-        max-height: 65vh !important;
+        max-height: 65.1vh !important;
         height: 100;
     }
     .carousel-text {
