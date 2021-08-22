@@ -365,6 +365,33 @@ ul li {
 /* Media queries */
 
 
+/* Small devices smaller than telephone */
+
+@media (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    /* information header */
+    #information {
+        padding-top: 20px;
+    }
+    .telephonesHeader {
+        font-size: 0.9em;
+    }
+    .fa-facebook-f {
+        position: absolute;
+        bottom: 200%;
+        right: 10%;
+    }
+    /* Carousel */
+    .carousel-text {
+        font-size: 0.5em;
+        inline-size: 30vh;
+    }
+}
+
+
 /*  Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
