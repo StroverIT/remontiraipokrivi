@@ -378,7 +378,7 @@ ul li {
         padding-bottom: 13%;
     }
     .telephonesHeader {
-        font-size: 0.71em;
+        font-size: 1em;
     }
     .fa-facebook-f {
         margin-bottom: 20px;
@@ -388,13 +388,14 @@ ul li {
     /* Carousel */
     .carousel-inner {
         width: 100%;
-        max-height: 65.1vh !important;
+        max-height: 50.1vh !important;
         height: 100;
     }
     .carousel-text {
-        top: 36%;
+        position: absolute;
+        top: 30%;
         text-align: center;
-        font-size: 0.3em;
+        font-size: 0.5em;
         inline-size: 18vh;
     }
 }
