@@ -398,10 +398,10 @@ ul li {
         font-size: 0.5em;
         inline-size: 19vh;
     }
-    .headerImages {
+    .mainImages {
         margin-bottom: 10%;
     }
-    .headerImages img {
+    .mainImages img {
         position: relative;
         margin-top: 10%;
         top: 50%;
