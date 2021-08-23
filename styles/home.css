@@ -388,15 +388,18 @@ ul li {
     /* Carousel */
     .carousel-inner {
         width: 100%;
-        max-height: 50.1vh !important;
+        max-height: 63vh !important;
         height: 100;
     }
     .carousel-text {
         position: absolute;
-        top: 30%;
+        top: 36%;
+        left: 50%;
         text-align: center;
-        font-size: 0.5em;
-        inline-size: 19vh;
+        font-size: 0.4em;
+        inline-size: 40vh;
+        word-wrap: break-word;
+        /* border: 2px solid black; */
     }
     .mainImages {
         margin-bottom: 10%;
