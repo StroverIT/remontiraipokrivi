@@ -396,7 +396,17 @@ ul li {
         top: 30%;
         text-align: center;
         font-size: 0.5em;
-        inline-size: 18vh;
+        inline-size: 19vh;
+    }
+    .headerImages {
+        margin-bottom: 10%;
+    }
+    .headerImages img {
+        position: relative;
+        margin-top: 10%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
