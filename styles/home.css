@@ -377,11 +377,11 @@ ul li {
         padding-top: 20px;
         padding-bottom: 13%;
     }
-    .telephonesHeader {
-        font-size: 1em;
+    .headerTelEmail {
+        font-size: 0.80em;
     }
     .fa-facebook-f {
-        margin-bottom: 20px;
+        font-size: 0.70em;
         position: absolute;
         right: 45%;
     }
