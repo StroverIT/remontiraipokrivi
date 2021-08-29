@@ -411,6 +411,39 @@ ul li {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .textImagesContainer .textImages {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .textImagesContainer .pTextImages {
+        font-size: 0.9em;
+    }
+    /* Emojis */
+    .emojisContainer {
+        margin: 0;
+        padding: 0;
+    }
+    .emojisBox {
+        display: inline;
+    }
+    .emojisTest i {
+        font-size: 1.2em;
+    }
+    .buggedTextEmoji p {
+        padding-left: 6vw;
+    }
+    .textEmojis p {
+        margin-top: -7vh;
+        margin-left: 6vw;
+        font-size: 0.7em;
+        inline-size: 100vw;
+    }
+    .emojisInformation {
+        margin-bottom: 10vh;
+        padding-left: 7vw;
+        inline-size: 80vw;
+        font-size: 1em;
+    }
 }
 
 
