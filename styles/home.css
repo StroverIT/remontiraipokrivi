@@ -175,20 +175,14 @@ ul li {
     padding: 0;
 }
 
-.emojisTest {
-    margin-left: -1vw;
-}
-
 .emojisTest::after {
     content: '';
     display: block;
     width: 0;
     height: 0;
-    border-left: 0.8vw solid transparent;
-    border-right: 0.8vw solid transparent;
-    border-top: 1.7vw solid #0778e9;
-    position: relative;
-    left: 25%;
+    border-left: 4vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 4vw solid #0778e9;
 }
 
 .emojisInformation {
@@ -250,12 +244,7 @@ ul li {
     text-transform: uppercase;
 }
 
-.textEmojis p {
-    margin-right: -2.7vw;
-    margin-top: -1vw;
-    inline-size: 20vw;
-    overflow: hidden;
-}
+.textEmojis p {}
 
 
 /* Make first letter bigger */
@@ -267,12 +256,6 @@ ul li {
 
 
 /* container */
-
-.emojisContainer {
-    margin-top: 7vw;
-    margin-left: 10vw;
-    margin-bottom: 7vw;
-}
 
 
 /* -------- GoodCraftSman company ------ */
@@ -423,14 +406,12 @@ ul li {
         margin: 0;
         padding: 0;
     }
-    .emojisBox {
-        display: inline;
+    .emojisTest {
+        margin: 0;
+        padding: 0;
     }
     .emojisTest i {
         font-size: 1.2em;
-    }
-    .buggedTextEmoji p {
-        padding-left: 6vw;
     }
     .textEmojis p {
         margin-top: -7vh;
@@ -441,7 +422,7 @@ ul li {
     .emojisInformation {
         margin-bottom: 10vh;
         padding-left: 7vw;
-        inline-size: 80vw;
+        inline-size: 100vw;
         font-size: 1em;
     }
 }
@@ -487,14 +468,9 @@ ul li {
         padding: 0.4em 0.4em;
         background-color: #0778e9;
     }
-    /* Bugged */
-    .buggedTextEmoji {
-        padding-left: 1em;
-    }
     .textEmojis p {
         font-size: 2.8vw;
         inline-size: 100vw;
-        margin-right: -20em;
         overflow: hidden;
     }
     .emojisInformation {
@@ -508,17 +484,6 @@ ul li {
     .emojisBox {
         padding: 0;
         margin: 0;
-    }
-    .emojisTest::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-left: 1.2vw solid transparent;
-        border-right: 1.2vw solid transparent;
-        border-top: 2vw solid #0778e9;
-        position: relative;
-        left: 20%;
     }
     .goodCraftsmanContainer {
         height: 100vh;
