@@ -313,7 +313,7 @@ export default function Navigation() {
               </div>
               <div>
                 <a
-                  href="viber://chat?number=%2B+359893909594"
+                  href="viber://chat/?number=%2B359893909594"
                   aria-label="Button for calling on viber"
                 >
                   <FaViber />

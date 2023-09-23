@@ -202,7 +202,7 @@ export default function ContactUs({
               </a>
             </div>
             <div className="flex items-center">
-              <a href="viber://chat?number=%2B+359893909594">
+              <a href="viber://chat/?number=%2B359893909594">
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FaViber />

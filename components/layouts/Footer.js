@@ -179,7 +179,7 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href="viber://chat?number=%2B+359893909594">
+                      <a href="viber://chat/?number=%2B359893909594">
                         <section className="flex-center ">
                           <span className="text-lg">
                             <FaViber />
@@ -211,7 +211,7 @@ export default function Footer() {
       <section
         className={`bg-gray-250 flex-center py-5 text-white flex-wrap max-sm:flex-col relative flex-col`}
       >
-        <div className="flex sm:pl-1">
+        <div className="flex flex-col sm:pl-1 lg:flex-row">
           <div className="flex-center">
             <AiOutlineCopyright />
             2023 РАЙБИЛДИНГ 76.

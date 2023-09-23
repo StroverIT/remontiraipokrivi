@@ -47,7 +47,7 @@ const ContactUs = () => {
 
               <li>
                 <a
-                  href="viber://chat?number=%2B+359893909594"
+                  href="viber://chat/?number=%2B359893909594"
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -55,13 +55,13 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">Viber</h2>
-                    <p>+359 89 506 3670</p>
+                    <p>+359 89 390 9594</p>
                   </div>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:временноbg@gmail.com"
+                  href="mailto:Pokrividoverie74@gmail.com"
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-3xl text-blue">
@@ -69,7 +69,7 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">И-мейл</h2>
-                    <p>временноbg@gmail.com</p>
+                    <p>Pokrividoverie74@gmail.com</p>
                   </div>
                 </a>
               </li>
