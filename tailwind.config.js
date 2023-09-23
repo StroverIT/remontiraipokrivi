@@ -1,4 +1,6 @@
 const customColors = {
+
+  // FIX THE FUCKING COLORS
   "bg-color": "#f3f3f3",
   primary: { DEFAULT: "#0D6EFD", 500: "hsl(215, 80%, 33%)" },
   "primary-150": "hsl(215, 80%, 20%)",
