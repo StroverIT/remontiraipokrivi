@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -85,9 +86,9 @@ function SwiperPopup({ data, linkForImg, setImgData }) {
         onClick={() => setImgData(null)}
       ></section>
 
-      <section className="absolute z-50 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex-col  flex-center">
+      <section className="absolute z-50 flex-col -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 flex-center">
         <section
-          className="absolute text-2xl bg-white rounded-full cursor-pointer -top-10 right-10 z-20"
+          className="absolute z-20 text-2xl bg-white rounded-full cursor-pointer -top-10 right-10"
           onClick={() => setImgData(null)}
         >
           <HiX />
