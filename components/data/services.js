@@ -16,13 +16,13 @@ export const data = [
     // Независимо дали става въпрос за плосък покрив или скатен покрив, ние сме тук, за да гарантираме вашата защита.
     _id: "office",
   },
-  {
-    title: "Изграждане на Метални/Дървени Конструкции",
-    image: "europe.png",
-    link: "/services/construction-of-metal-wooden-structures",
-    p: ` Предоставяме услуги по изграждане на метални и дървени конструкции за вашия покрив.`,
-    _id: "international",
-  },
+  // {
+  //   title: "Изграждане на Метални/Дървени Конструкции",
+  //   image: "europe.png",
+  //   link: "/services/construction-of-metal-wooden-structures",
+  //   p: ` Предоставяме услуги по изграждане на метални и дървени конструкции за вашия покрив.`,
+  //   _id: "international",
+  // },
   {
     title: "Изграждане и монтаж на улуци",
     image: "moving.png",
