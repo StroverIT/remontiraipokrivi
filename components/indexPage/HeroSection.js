@@ -45,7 +45,7 @@ export default function HeroSection() {
                 </p> */}
                 <div className="mt-8 lg:mt-9">
                   <a
-                    href="tel:+359893909594"
+                    href={`tel:+${process.env.NUMBER}`}
                     className="px-10 py-3 font-semibold uppercase rounded-sm lg:text-lg bg-[#d97706]"
                   >
                     позвъни сега

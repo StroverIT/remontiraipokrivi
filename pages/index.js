@@ -45,7 +45,6 @@ export default function Home() {
               color="border-[#d97706]"
               btnColor="bg-[#d97706]"
               bgColor="bg-blue-50"
-              number="+359893909594"
               scrollBarThumb="scrollbar-thumb-primaryBlue-150"
               scrollBarTrack="scrollbar-track-primaryBlue-500"
               typePage="Web"

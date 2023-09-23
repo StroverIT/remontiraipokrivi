@@ -494,9 +494,9 @@ export default function PrivacyPolicy() {
           свържете с нас:
         </p>
         <ul className="flex flex-col mt-4 ml-10 list-disc gap-y-5">
-          <li>И-мейл: Pokrividoverie74@gmail.com</li>
+          <li>И-мейл: {process.env.EMAIL}</li>
 
-          <li>На телефон: +359893909594</li>
+          <li>На телефон: {process.env.NUMBER_SHOW}</li>
         </ul>
       </section>
     </>

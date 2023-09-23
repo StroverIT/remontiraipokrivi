@@ -32,7 +32,7 @@ const ContactUs = () => {
             <ul className="pr-4">
               <li className="">
                 <a
-                  href="tel:+359893909594"
+                  href={`tel:+${process.env.NUMBER}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -47,7 +47,7 @@ const ContactUs = () => {
 
               <li>
                 <a
-                  href="viber://chat/?number=%2B359893909594"
+                  href={`viber://chat/?number=%2B${process.env.NUMBER}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -61,7 +61,7 @@ const ContactUs = () => {
               </li>
               <li>
                 <a
-                  href="mailto:Pokrividoverie74@gmail.com"
+                  href={`mailto:${process.env.EMAIL}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-3xl text-blue">
@@ -69,7 +69,7 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">И-мейл</h2>
-                    <p>Pokrividoverie74@gmail.com</p>
+                    <p>{process.env.EMAIL}</p>
                   </div>
                 </a>
               </li>

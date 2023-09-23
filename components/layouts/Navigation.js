@@ -296,7 +296,7 @@ export default function Navigation() {
             <div className="flex items-center justify-between py-4 text-2xl max-sm:px-10 text-[#d97706] sm:container">
               <div>
                 <a
-                  href="tel:+359893909594"
+                  href={`tel:+${process.env.NUMBER}`}
                   aria-label="Button for calling on telehone"
                 >
                   <FiPhoneCall />
@@ -305,7 +305,7 @@ export default function Navigation() {
 
               <div>
                 <a
-                  href="mailto:Pokrividoverie74@gmail.com"
+                  href={`mailto:${process.env.EMAIL}`}
                   aria-label="Button for writting on email"
                 >
                   <HiOutlineMail />
@@ -313,7 +313,7 @@ export default function Navigation() {
               </div>
               <div>
                 <a
-                  href="viber://chat/?number=%2B359893909594"
+                  href={`viber://chat/?number=%2B${process.env.NUMBER}`}
                   aria-label="Button for calling on viber"
                 >
                   <FaViber />

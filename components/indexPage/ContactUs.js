@@ -182,27 +182,27 @@ export default function ContactUs({
           </section>
           <section className="flex flex-col mx-auto space-y-3 mt-7 focus:border-transparent">
             <div className="flex items-center">
-              <a href="mailto:Pokrividoverie74@gmail.com">
+              <a href={`mailto:${process.env.EMAIL}`}>
                 <section className="flex-center">
                   <div className="text-2xl ">
                     <HiOutlineMail />
                   </div>
-                  <div className="pl-1 ">Pokrividoverie74@gmail.com</div>
+                  <div className="pl-1 ">{process.env.EMAIL}</div>
                 </section>
               </a>
             </div>
             <div className="flex items-center">
-              <a href="tel:+359893909594">
+              <a href={`tel:+${process.env.NUMBER}`}>
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FiPhoneCall />
                   </div>
-                  <div className="pl-1 ">+359 89 390 9594</div>
+                  <div className="pl-1 ">{process.env.NUMBER_SHOW}</div>
                 </section>
               </a>
             </div>
             <div className="flex items-center">
-              <a href="viber://chat/?number=%2B359893909594">
+              <a href={`viber://chat/?number=%2B${process.env.NUMBER}`}>
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FaViber />
