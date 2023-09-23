@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { BsBoxArrowInLeft } from "react-icons/bs";
-import { links } from "../../components/otherPagesNav/termsAndConditionsData";
+import { links } from "../../../components/otherPagesNav/termsAndConditionsData";
 
 export default function TermsAndConditions() {
   return (

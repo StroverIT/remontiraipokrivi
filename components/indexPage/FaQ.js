@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import Title from "../Title";
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";

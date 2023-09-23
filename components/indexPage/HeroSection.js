@@ -1,15 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+
 
 import Image from "next/legacy/image";
-import { useScroll, motion } from "framer-motion";
-
-import { globalContext } from "../globalContext";
 
 export default function HeroSection() {
-  const { heroRef } = useContext(globalContext);
 
   return (
-    <div className="" ref={heroRef} id="index">
+    <div className="" id="index">
       <div className="fixed top-0 left-0 h-[90vh] bg-white w-screen -z-20"></div>
 
       <div className="">
@@ -45,7 +41,7 @@ export default function HeroSection() {
                 </p> */}
                 <div className="mt-8 lg:mt-9">
                   <a
-                    href={`tel:+${process.env.NUMBER}`}
+                    href={`tel:+${process.env.NEXT_PUBLIC_NUMBER}`}
                     className="px-10 py-3 font-semibold uppercase rounded-sm lg:text-lg bg-[#d97706]"
                   >
                     позвъни сега

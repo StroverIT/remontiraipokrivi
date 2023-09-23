@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import ContactUs from "../../components/indexPage/ContactUs";
-import SwiperGallery from "../../components/SwiperGallery";
-import SwiperServices from "../../components/SwiperServices";
-import Title from "../../components/Title";
+import ContactUs from "../../../components/indexPage/ContactUs";
+import SwiperGallery from "../../../components/SwiperGallery";
+import SwiperServices from "../../../components/SwiperServices";
+import Title from "../../../components/Title";
 
-import { officeMovingImages } from "../../components/data/office-moving-images";
+import { officeMovingImages } from "../../../components/data/office-moving-images";
 import { BsCheckLg } from "react-icons/bs";
-import Checkers from "../../components/Checkers";
+import Checkers from "../../../components/Checkers";
 
 
 

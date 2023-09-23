@@ -1,30 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
-import Footer from "./Footer";
-import Navigation from "./Navigation";
-import { globalContext } from "../globalContext";
+
+"use client"
 import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
+
+// Components
+
+import Cookie from "../../banners/Cookie";
+import Footer from "../Footer";
+import Navigation from "../Navigation";
+import ToastContainer from "../ToastContainer";
 
 export default function Layout({ children }) {
-  const router = useRouter();
-  const heroRef = useRef(null);
-  const footerRef = useRef(null);
-
-  const [scrollData, setScrollData] = useState(0);
-
-  const handleScroll = (event) => {
-    setScrollData(window.scrollY);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  
 
   return (
-    <globalContext.Provider value={{ heroRef, scrollData, footerRef }}>
+    <>
+      <Cookie  />
       <div className="flex flex-col justify-between h-screen">
         <Navigation />
         <AnimatePresence
@@ -32,14 +23,13 @@ export default function Layout({ children }) {
           onExitComplete={() => {
             if (typeof window !== "undefined") {
               const html = document.querySelector("html");
-
               window.scrollTo({ top: 0 });
               html.style.scrollBehavior = "smooth";
             }
           }}
         >
           <motion.div
-            key={router.route}
+            key={usePathname}
             initial="initialState"
             animate="animateState"
             exit="exitState"
@@ -61,9 +51,9 @@ export default function Layout({ children }) {
             {children}
           </motion.div>
         </AnimatePresence>
-
         <Footer />
+        <ToastContainer />
       </div>
-    </globalContext.Provider>
+    </>
   );
 }

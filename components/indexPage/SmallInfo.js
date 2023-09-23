@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+
+"use client"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -7,7 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Icons
-import { HiOfficeBuilding } from "react-icons/hi";
 import Image from "next/legacy/image";
 
 export default function SmallInfo() {

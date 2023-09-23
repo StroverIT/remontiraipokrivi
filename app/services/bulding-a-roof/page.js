@@ -2,11 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import { BsCheckLg } from "react-icons/bs";
-import ContactUs from "../../components/indexPage/ContactUs";
-import SwiperServices from "../../components/SwiperServices";
-import Title from "../../components/Title";
-import { listAllExceptOne } from "../../utils/services";
-import Checkers from "../../components/Checkers";
+import ContactUs from "../../../components/indexPage/ContactUs";
+import SwiperServices from "../../../components/SwiperServices";
+import Title from "../../../components/Title";
+import { listAllExceptOne } from "../../../utils/services";
+import Checkers from "../../../components/Checkers";
 
 
 const checkerData = [

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import React from "react";
 
-import { links } from "../../components/otherPagesNav/privacyAndPolicyData";
 
 export default function PrivacyPolicy() {
   return (
@@ -494,9 +493,9 @@ export default function PrivacyPolicy() {
           свържете с нас:
         </p>
         <ul className="flex flex-col mt-4 ml-10 list-disc gap-y-5">
-          <li>И-мейл: {process.env.EMAIL}</li>
+          <li>И-мейл: {process.env.NEXT_PUBLIC_EMAIL}</li>
 
-          <li>На телефон: {process.env.NUMBER_SHOW}</li>
+          <li>На телефон: {process.env.NEXT_PUBLIC_NUMBER_SHOW}</li>
         </ul>
       </section>
     </>

@@ -1,9 +1,29 @@
+"use client"
 import Link from "next/link";
 
 import { BsCheckLg } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
-const Cookie = ({ setIsCookie, isCookie }) => {
+const Cookie = () => {
+
+  const [isCookie, setIsCookie] = useState(false);
+
+  useEffect(() => {
+    const isFound = localStorage.getItem("iknowyou");
+
+    if (!isFound) {
+      setTimeout(() => {
+        setIsCookie(true);
+      }, 5000);
+    }
+  }, []);
+  const cookieHandler = () => {
+    localStorage.setItem("iknowyou", "true");
+    setIsCookie(false);
+  };
+
+
   return (
     <AnimatePresence mode="wait">
       {isCookie && (

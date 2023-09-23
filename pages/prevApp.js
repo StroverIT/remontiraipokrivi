@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Cookie from "../components/banners/Cookie";
+
 function MyApp({ Component, pageProps }) {
   const [isCookie, setIsCookie] = useState(false);
 

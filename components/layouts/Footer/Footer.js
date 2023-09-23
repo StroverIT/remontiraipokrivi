@@ -1,83 +1,28 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useContext, useState } from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaViber } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGlobalLine } from "react-icons/ri";
-import newsletterSend from "../../fetches/newsletterSend";
-import { toastError, toastSuccess } from "../../libs/Notifications";
 
-import { data } from "../data/services";
-import { globalContext } from "../globalContext";
+
+import { data } from "../../data/services";
+import Form from "./components/Form";
 
 export default function Footer() {
-  const router = useRouter();
-
-  const { footerRef } = useContext(globalContext);
-
-  const [input, setInputs] = useState("");
-  const [isLoading, setLoading] = useState(false);
-  const [colors, setColors] = useState({
-    bgColor: "",
-    button: "",
-    markers: "",
-    copyRight: "",
-  });
-
-  const handler = (e) => {
-    setInputs(e.target.value);
-  };
-  const newsLetterHandler = async () => {
-    setLoading(true);
-
-    const data = await newsletterSend({ email: input });
-
-    if (data.message) {
-      setInputs("");
-      toastSuccess(data.message);
-    }
-    if (data.error) {
-      toastError(data.error);
-    }
-
-    router.push(router.asPath, undefined, { scroll: false });
-
-    setLoading(false);
-  };
 
   return (
-    <footer className={`bg-dark   pt-2 z-10 w-full`} ref={footerRef}>
+    <footer className={`bg-dark   pt-2 z-10 w-full`}>
       <section className={` pb-14`}>
         <section className="flex flex-col-reverse 2xl:grid xl:grid-cols-[30%70%]  container text-white  3xl:gap-x-28">
           <section className="flex flex-col xl:items-center xl:justify-center xl:flex-row gap-x-10 2xl:flex-col 2xl:items-start">
-            <section className="w-full xl:w-96">
-              <h3 className="mt-5 mb-3 font-semibold uppercase ">
-                Абонирай се за нашите оферти
-              </h3>
-              <input
-                type="text"
-                className="w-full px-2 py-5 text-sm text-black border-none rounded-sm h-7 placeholder:text-dark text-dark"
-                placeholder="Email"
-                value={input}
-                onChange={handler}
-              />
-              <div className="mt-2 flex-center">
-                <button
-                  className={`bg-[#d97706] w-full py-1 rounded-sm flex-center`}
-                  onClick={newsLetterHandler}
-                >
-                  {isLoading ? <div className="loader"></div> : "Абонирай ме!"}
-                </button>
-              </div>
-            </section>
+           <Form/>
             <section>
               <h4 className="mt-8 font-semibold uppercase">Социални мрежи</h4>
               <div className="flex mt-2 gap-x-5">
                 <a
-                  href={process.env.FACEBOOK_URL}
+                  href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Button for facebook social media"
@@ -109,7 +54,7 @@ export default function Footer() {
           <section className="grid-cols-[40%30%20%] justify-center xl:grid ">
             <section>
               <h5 className="mt-5 text-lg font-semibold">Услуги</h5>
-              <ul className={`list-disc  ${colors.markers} leading-8 ml-4`}>
+              <ul className={`list-disc  marker:text-[#d97706] leading-8 ml-4`}>
                 {data.map((link) => {
                   return (
                     <li className="cursor-default" key={link._id}>
@@ -124,8 +69,8 @@ export default function Footer() {
               </ul>
             </section>
             <section>
-              <h5 className="mt-5 text-lg font-semibold">За временно</h5>
-              <ul className={`list-disc ${colors.markers} pb-1 leading-8 ml-4`}>
+              <h5 className="mt-5 text-lg font-semibold">{process.env.NEXT_PUBLIC_FIRM_NAME_BG}</h5>
+              <ul className={`list-disc marker:text-[#d97706] pb-1 leading-8 ml-4`}>
                 {/* <li className="cursor-default">
                   <Link href="/blog" scroll={false}>
                     <span className="pb-1 border-b cursor-pointer border-border">
@@ -171,15 +116,15 @@ export default function Footer() {
                 <div className="ml-1 border-l border-border">
                   <ul className="pl-4 leading-8">
                     <li className="flex items-center">
-                      <a href={`tel:+${process.env.NUMBER}`}>
+                      <a href={`tel:+${process.env.NEXT_PUBLIC_NUMBER}`}>
                         <section className="flex-center">
                           <FiPhoneCall />
-                          <span className="pl-1">{process.env.NUMBER_SHOW}</span>
+                          <span className="pl-1">{process.env.NEXT_PUBLIC_NUMBER_SHOW}</span>
                         </section>
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href={`viber://chat/?number=%2B${process.env.NUMBER}`}>
+                      <a href={`viber://chat/?number=%2B${process.env.NEXT_PUBLIC_NUMBER}`}>
                         <section className="flex-center ">
                           <span className="text-lg">
                             <FaViber />
@@ -189,17 +134,17 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href={`mailto:${process.env.EMAIL}`}>
+                      <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
                         <section className="flex-center">
                           <HiOutlineMail />
-                          <span className="pl-1">{process.env.EMAIL}</span>
+                          <span className="pl-1">{process.env.NEXT_PUBLIC_EMAIL}</span>
                         </section>
                       </a>
                     </li>
 
                     <li className="flex items-center">
                       <RiGlobalLine />{" "}
-                      <span className="pl-1">{process.env.WEBSITE_URL}</span>
+                      <span className="pl-1">{process.env.NEXT_PUBLIC_WEBSITE_URL}</span>
                     </li>
                   </ul>
                 </div>
@@ -214,7 +159,7 @@ export default function Footer() {
         <div className="flex flex-col sm:pl-1 lg:flex-row">
           <div className="flex-center">
             <AiOutlineCopyright />
-            2023 {process.env.FIRM_NAME_BG}.
+            2023 {process.env.NEXT_PUBLIC_FIRM_NAME_BG}.
           </div>
           <div className="pl-1">Всички права запазени.</div>
         </div>

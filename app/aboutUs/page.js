@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import Title from "../../components/Title";
 
 export default function AboutUs() {
   return (

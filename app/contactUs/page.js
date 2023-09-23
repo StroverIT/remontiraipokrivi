@@ -1,9 +1,8 @@
 import Head from "next/head";
-import React, { useState } from "react";
 import { FaViber } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
-import ContactWithBox from "../components/indexPage/ContactWithBox";
+import ContactWithBox from "../../components/indexPage/ContactWithBox";
 
 const ContactUs = () => {
   return (
@@ -32,7 +31,7 @@ const ContactUs = () => {
             <ul className="pr-4">
               <li className="">
                 <a
-                  href={`tel:+${process.env.NUMBER}`}
+                  href={`tel:+${process.env.NEXT_PUBLIC_NUMBER}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -40,14 +39,14 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">Телефон</h2>
-                    <p>+359 89 506 3670</p>
+                    <p>{process.env.NEXT_PUBLIC_NUMBER_SHOW}</p>
                   </div>
                 </a>
               </li>
 
               <li>
                 <a
-                  href={`viber://chat/?number=%2B${process.env.NUMBER}`}
+                  href={`viber://chat/?number=%2B${process.env.NEXT_PUBLIC_NUMBER}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -55,13 +54,13 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">Viber</h2>
-                    <p>+359 89 390 9594</p>
+                    <p>{process.env.NEXT_PUBLIC_NUMBER_SHOW}</p>
                   </div>
                 </a>
               </li>
               <li>
                 <a
-                  href={`mailto:${process.env.EMAIL}`}
+                  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-3xl text-blue">
@@ -69,7 +68,7 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">И-мейл</h2>
-                    <p>{process.env.EMAIL}</p>
+                    <p>{process.env.NEXT_PUBLIC_EMAIL}</p>
                   </div>
                 </a>
               </li>

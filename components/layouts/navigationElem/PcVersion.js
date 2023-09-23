@@ -149,7 +149,7 @@ const PcVersion = ({
                 </Link>
               </li> */}
               <li className="px-5 py-2 rounded-sm bg-[#d97706]">
-                <a href={`tel:+${process.env.NUMBER}`}>позвъни сега </a>
+                <a href={`tel:+${process.env.NEXT_PUBLIC_NUMBER}`}>позвъни сега </a>
               </li>
             </ul>
           </section>

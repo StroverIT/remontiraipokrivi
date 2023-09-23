@@ -1,5 +1,4 @@
 const customColors = {
-
   // FIX THE FUCKING COLORS
   "bg-color": "#f3f3f3",
   primary: { DEFAULT: "#0D6EFD", 500: "hsl(215, 80%, 33%)" },
@@ -65,6 +64,7 @@ const customColors = {
 
 module.exports = {
   content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],

@@ -17,8 +17,8 @@ async function handler(req, res) {
       `;
       // Sending email
       await sendEmail(
-        process.env.EMAIL_SEND,
-        process.env.EMAIL_SEND,
+        process.env.NEXT_PUBLIC_EMAIL_SEND,
+        process.env.NEXT_PUBLIC_EMAIL_SEND,
         "Им",
         message
       );

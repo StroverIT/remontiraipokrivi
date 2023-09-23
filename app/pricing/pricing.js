@@ -1,8 +1,8 @@
 import Head from "next/head";
 import React from "react";
-import ContactUs from "../components/indexPage/ContactUs";
-import SwiperServices from "../components/SwiperServices";
-import Title from "../components/Title";
+import ContactUs from "../../components/indexPage/ContactUs";
+import SwiperServices from "../../components/SwiperServices";
+import Title from "../../components/Title";
 
 export default function CleaningOfApartmentsAndHouses() {
   return (
