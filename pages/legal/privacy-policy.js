@@ -494,9 +494,9 @@ export default function PrivacyPolicy() {
           свържете с нас:
         </p>
         <ul className="flex flex-col mt-4 ml-10 list-disc gap-y-5">
-          <li>И-мейл: временноbg@gmail.com</li>
+          <li>И-мейл: Pokrividoverie74@gmail.com</li>
 
-          <li>На телефон: +359 89 506 3670</li>
+          <li>На телефон: +359893909594</li>
         </ul>
       </section>
     </>

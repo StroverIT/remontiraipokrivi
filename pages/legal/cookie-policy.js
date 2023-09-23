@@ -16,9 +16,9 @@ export default function PrivacyPolicy() {
           content="Политика на бисквитките ни. Запознайте се как ние използваме и обработваме предоставени данните. За контакти - временноbg@gmail.com"
         />
       </Head>
-      <section className="container text-black mt-48">
+      <section className="container mt-48 text-black">
         <div>
-          <div className="text-sm mb-10 flex items-center">
+          <div className="flex items-center mb-10 text-sm">
             <div className="mr-1 text-lg">
               <BsBoxArrowInLeft />
             </div>
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
         <section className="mt-10 mb-20">
           <p>
             Тази Политика за поверителност описва политиките на временно LTD,
-            имейл: временноbg@gmail.com, телефон: +359 89 506 3670 относно
+            имейл: временноbg@gmail.com, телефон: +359893909594 относно
             събирането, използването и разкриването на вашата информация, която
             събираме, когато използвате нашия уебсайт ( https://временно.bg ).
             (услугата). Чрез достъпа до или използването на Услугата вие се

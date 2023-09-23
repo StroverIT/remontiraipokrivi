@@ -296,7 +296,7 @@ export default function Navigation() {
             <div className="flex items-center justify-between py-4 text-2xl max-sm:px-10 text-[#d97706] sm:container">
               <div>
                 <a
-                  href="tel:+359 временно"
+                  href="tel:+359893909594"
                   aria-label="Button for calling on telehone"
                 >
                   <FiPhoneCall />
@@ -313,7 +313,7 @@ export default function Navigation() {
               </div>
               <div>
                 <a
-                  href="viber://chat?number=+359 временно"
+                  href="viber://chat?number=%2B+359893909594"
                   aria-label="Button for calling on viber"
                 >
                   <FaViber />
