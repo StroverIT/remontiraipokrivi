@@ -8,7 +8,8 @@ import Title from "../../components/Title";
 
 import { officeMovingImages } from "../../components/data/office-moving-images";
 import { BsCheckLg } from "react-icons/bs";
-import Checkers from "./Checkers";
+import Checkers from "../../components/Checkers";
+
 
 
 const checkerData = [

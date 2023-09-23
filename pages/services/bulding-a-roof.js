@@ -6,7 +6,8 @@ import ContactUs from "../../components/indexPage/ContactUs";
 import SwiperServices from "../../components/SwiperServices";
 import Title from "../../components/Title";
 import { listAllExceptOne } from "../../utils/services";
-import Checkers from "./Checkers";
+import Checkers from "../../components/Checkers";
+
 
 const checkerData = [
   "Изграждане на нова дървена или метална конструкция",

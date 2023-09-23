@@ -4,7 +4,8 @@ import ContactUs from "../../components/indexPage/ContactUs";
 import SwiperServices from "../../components/SwiperServices";
 import Title from "../../components/Title";
 import { BsCheckLg } from "react-icons/bs";
-import Checkers from "./Checkers";
+import Checkers from "../../components/Checkers";
+
 
 const checkerData = [
   "Планиране и проектиране",
