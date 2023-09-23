@@ -13,7 +13,7 @@ import Form from "./components/Form";
 export default function Footer() {
 
   return (
-    <footer className={`bg-dark   pt-2 z-10 w-full`}>
+    <footer className={`bg-dark   pt-2 z-10 w-full max-md:pb-10`}>
       <section className={` pb-14`}>
         <section className="flex flex-col-reverse 2xl:grid xl:grid-cols-[30%70%]  container text-white  3xl:gap-x-28">
           <section className="flex flex-col xl:items-center xl:justify-center xl:flex-row gap-x-10 2xl:flex-col 2xl:items-start">
