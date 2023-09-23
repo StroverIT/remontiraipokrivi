@@ -28,7 +28,7 @@ export default function Services() {
         </section>
         <div className="mt-10 flex-center">
           <a
-            href="tel:+359893909594"
+            href={`tel:+${process.env.NUMBER}`}
             className="py-4 text-lg font-semibold text-white uppercase rounded-lg px-14 bg-[#d97706]"
           >
             позвъни сега

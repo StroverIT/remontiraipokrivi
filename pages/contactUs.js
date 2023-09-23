@@ -32,7 +32,7 @@ const ContactUs = () => {
             <ul className="pr-4">
               <li className="">
                 <a
-                  href="tel:+359893909594"
+                  href={`tel:+${process.env.NUMBER}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -47,7 +47,7 @@ const ContactUs = () => {
 
               <li>
                 <a
-                  href="viber://chat/?number=%2B359893909594"
+                  href={`viber://chat/?number=%2B${process.env.NEXT_PUBLIC_NUMBER}`}
                   className="flex items-center py-4 gap-x-2"
                 >
                   <div className="text-2xl text-blue">
@@ -55,7 +55,7 @@ const ContactUs = () => {
                   </div>
                   <div className="pl-2">
                     <h2 className="font-medium">Viber</h2>
-                    <p>+359 89 390 9594</p>
+                    <p>{process.env.NEXT_PUBLIC_NUMBER_SHOW}</p>
                   </div>
                 </a>
               </li>

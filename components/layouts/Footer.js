@@ -77,7 +77,7 @@ export default function Footer() {
               <h4 className="mt-8 font-semibold uppercase">Социални мрежи</h4>
               <div className="flex mt-2 gap-x-5">
                 <a
-                  href="https://www.facebook.com/profile.php?id=100070003034864"
+                  href={process.env.NEXT_PUBLIC_FACEBOOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Button for facebook social media"
@@ -171,15 +171,15 @@ export default function Footer() {
                 <div className="ml-1 border-l border-border">
                   <ul className="pl-4 leading-8">
                     <li className="flex items-center">
-                      <a href="tel:+359893909594">
+                      <a href={`tel:+${process.env.NUMBER}`}>
                         <section className="flex-center">
                           <FiPhoneCall />
-                          <span className="pl-1">+359 89 390 9594</span>
+                          <span className="pl-1">{process.env.NEXT_PUBLIC_NUMBER_SHOW}</span>
                         </section>
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href="viber://chat/?number=%2B359893909594">
+                      <a href={`viber://chat/?number=%2B${process.env.NEXT_PUBLIC_NUMBER}`}>
                         <section className="flex-center ">
                           <span className="text-lg">
                             <FaViber />
@@ -189,17 +189,17 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className="flex items-center">
-                      <a href="mailto:Pokrividoverie74@gmail.com">
+                      <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
                         <section className="flex-center">
                           <HiOutlineMail />
-                          <span className="pl-1">Pokrividoverie74@gmail.com</span>
+                          <span className="pl-1">{process.env.NEXT_PUBLIC_EMAIL}</span>
                         </section>
                       </a>
                     </li>
 
                     <li className="flex items-center">
                       <RiGlobalLine />{" "}
-                      <span className="pl-1">remontiraipokrivi.bg</span>
+                      <span className="pl-1">{process.env.NEXT_PUBLIC_WEBSITE_URL}</span>
                     </li>
                   </ul>
                 </div>
@@ -214,7 +214,7 @@ export default function Footer() {
         <div className="flex flex-col sm:pl-1 lg:flex-row">
           <div className="flex-center">
             <AiOutlineCopyright />
-            2023 РАЙБИЛДИНГ 76.
+            2023 {process.env.NEXT_PUBLIC_FIRM_NAME_BG}.
           </div>
           <div className="pl-1">Всички права запазени.</div>
         </div>

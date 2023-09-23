@@ -192,17 +192,17 @@ export default function ContactUs({
               </a>
             </div>
             <div className="flex items-center">
-              <a href="tel:+359893909594">
+              <a href={`tel:+${process.env.NUMBER}`}>
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FiPhoneCall />
                   </div>
-                  <div className="pl-1 ">+359 89 390 9594</div>
+                  <div className="pl-1 ">{process.env.NEXT_PUBLIC_NUMBER_SHOW}</div>
                 </section>
               </a>
             </div>
             <div className="flex items-center">
-              <a href="viber://chat/?number=%2B359893909594">
+              <a href={`viber://chat/?number=%2B${process.env.NEXT_PUBLIC_NUMBER}`}>
                 <section className="flex-center">
                   <div className="text-xl ">
                     <FaViber />

@@ -12,19 +12,19 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Изграждане на Покриви,Конструкции,Навеси РАЙБИЛДИНГ 76 ЕООД </title>
+        <title>Изграждане на Покриви,Конструкции,Навеси {process.env.NEXT_PUBLIC_FIRM_NAME_BG} ЕООД </title>
         <meta
           name="description"
-          content="Изграждане на Покриви,Конструкции,Навеси РАЙБИЛДИНГ 76 ЕООД"
+          content="Изграждане на Покриви,Конструкции,Навеси {process.env.NEXT_PUBLIC_FIRM_NAME_BG} ЕООД"
         />
         {/* Important tags for social media */}
         <meta
           property="og:title"
-          content="Изграждане на Покриви,Конструкции,Навеси РАЙБИЛДИНГ 76 ЕООД"
+          content="Изграждане на Покриви,Конструкции,Навеси {process.env.NEXT_PUBLIC_FIRM_NAME_BG} ЕООД"
         />
         <meta
           property="og:description"
-          content="Изграждане на Покриви,Конструкции,Навеси РАЙБИЛДИНГ 76 ЕООД"
+          content="Изграждане на Покриви,Конструкции,Навеси {process.env.NEXT_PUBLIC_FIRM_NAME_BG} ЕООД"
         />
 
         <meta property="og:url" content="https://временно.bg/" />
