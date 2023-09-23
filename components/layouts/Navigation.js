@@ -179,11 +179,11 @@ export default function Navigation() {
                         Цени
                       </Link>
                     </li> */}
-                    {pathname == "/" && (
+                    {/* {pathname == "/" && (
                       <li onClick={handleNav.bind({}, "#faq")}>
                         <a href="#">Въпроси</a>
                       </li>
-                    )}
+                    )} */}
 
                     <li>
                       <Link href="/aboutUs" scroll={false}>
@@ -305,7 +305,7 @@ export default function Navigation() {
 
               <div>
                 <a
-                  href="mailto:временноbg@gmail.com"
+                  href="mailto:Pokrividoverie74@gmail.com"
                   aria-label="Button for writting on email"
                 >
                   <HiOutlineMail />
